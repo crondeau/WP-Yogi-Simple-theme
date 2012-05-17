@@ -1,12 +1,23 @@
-<?php get_header(); ?>
+<?php get_header(); ?> 
+
 <div id="main">
-	<div id="content">
-		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			<?php the_content();?>
-			<?php endwhile; endif; ?>
-		</div>
-	</div>
+	
+	<section id="content">
+		
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+			
+		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+			
+			<?php the_content(); ?>
+			
+		</article>
+		
+		<?php endwhile; endif; ?>
+		
+	</section><!-- #content -->
+
 <?php get_sidebar(); ?>
-</div><!-- end of main div -->
+
+</div><!-- #main -->
+
 <?php get_footer(); ?>

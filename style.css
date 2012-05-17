@@ -1,89 +1,156 @@
 /*
 Theme Name: Custom Theme Tutorial and Demo	
-Theme URI: http://www.bluelimemedia.com
-Description: Theme designed for Langara's Electronic Media and Digital Web 3 class 
+Theme URI: http://www.wpyogi.com
+Description: Theme designed for Langara's Electronic Media and Digital Web 3 class, Lesson 3, Tutorial - http://www.wpyogi.com/2011/04/build-a-simple-custom-theme/
 Version: 1.0
 Author: Christine Rondeau
 Author URI: http://www.bluelimemedia.com
 */
-@import url("reset.css");
+
+/* Normalize CSS
+http://github.com/necolas/normalize.css */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}
+audio,canvas,video{display:inline;zoom:1px}
+html{font-size:100%;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+body,button,input,select,textarea{font-family:sans-serif}
+a:focus{outline:thin dotted}
+a, a:hover,a:active{outline:0}
+h1{font-size:2em}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:700}
+blockquote{margin:1em 40px}
+dfn{font-style:italic}
+mark{background:#ff0;color:#000}
+pre,code,kbd,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}
+pre{white-space:pre-wrap;word-wrap:break-word}
+q{quotes:none}
+q:before,q:after{content:none}
+small{font-size:75%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-0.5em}
+sub{bottom:-0.25em}
+ul,ol{margin:0;padding:0}
+dd{margin:0 0 0 40px}
+nav ul,nav ol{list-style:none;list-style-image:none}
+img{border:0;-ms-interpolation-mode:bicubic}
+svg:not(:root){overflow:hidden}
+fieldset{border:1px solid silver;margin:0 2px;padding:0.35em 0.625em 0.75em}
+legend{border:0;margin-left:-7px}
+button,input,select,textarea{font-size:100%;vertical-align:middle;margin:0}
+button,input{line-height:normal}
+button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button;overflow:visible}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
+input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+td{vertical-align:top}
+audio:not([controls]),[hidden]{display:none}
+body,figure,form{margin:0}
 
 /* Images
 ----------------------------------------------*/
 .alignleft {
-	display: inline;
-	float: left;
-	margin: 4px 24px 12px 0;
+	display:inline;
+	float:left;
+	margin:0 10px 10px 0;
 }
+
 .alignright {
-	display: inline;
-	float: right;
-	margin:4px 0 12px 24px;
+	display:inline;
+	float:right;
+	margin:0 0 10px 10px;
 }
+
 .aligncenter {
-	clear: both;
-	display: block;
-	margin: 4px auto 12px auto;
+	clear:both;
+	display:block;
+	margin:0 auto 10px;
 }
+
 .wp-caption {
-	background: #fff;
-	margin-bottom: 20px; padding: 4px;
+	background:#fff;
+	margin-bottom:20px;
 	border:1px solid #f6f6f6;
+	padding:4px;
 }
+
 .wp-caption img {
-	margin: 5px 5px 0;
+	margin:5px 5px 0;
 }
 
 .wp-caption-text {
-	margin: 5px;
-	color: #aaa;
+	color:#aaa;
 	text-align:center;
-	font-size:11px; 
+	font-size:11px;
+	margin:5px;
 }
 
 /* General Styles 
 ----------------------------------------------*/
-.clear {clear: both;}
-a {color:#99619f;}
-a:hover {color:#48244c;}
-p {	padding:0 0 15px 0; }
+.clear {
+	clear: both;
+}
+
+a {
+	color:#99619f;
+}
+
+a:hover {
+	color:#48244c;
+}
+.clear {
+	clear:both;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color:#48244c;
+	font-family:Georgia, Times, 'Times New Roman', serif;
+	font-weight:normal;
+}
 
 h1 {
-	margin:4px 0 10px 0;
-	font-weight:normal;
-	color:#48244c;		
-	font-size:28px; line-height:30px;
-	font-family: georgia, serif;
-}
-h2, h2 a, h3, h4, h5, h6 { 
-	margin:10px 0;
-	font-weight:normal;
-	color:#48244c;
-	font-size:22px; line-height:26px;
-	font-family: georgia, serif;
+	margin:4px 0 10px 0;	
+	font-size:28px; 
+	line-height:30px;
 }
 
-h2 a  {text-decoration:none; }
-h1 a:hover, h2 a:hover {text-decoration:underline; }
+h2, h2 a, h3, h4, h5, h6 { 
+	margin:10px 0;
+	font-size:22px; 
+	line-height:26px;
+}
+
+h2 a {
+	color:#48244c;
+	text-decoration:none;
+}
+
+h2 a:hover {
+	text-decoration:underline;
+}
 
 blockquote{
 	color: #99619f;
 	border-top:1px solid #48244c;
 	border-bottom:1px solid #48244c;
-	padding:10px; margin:10px 0;
 	font-size:16px;
 	font-style:italic;
-	font-family: Georgia, serif;
+	font-family:Georgia, Times, 'Times New Roman', serif;
+	margin:10px 0;
+	padding:10px;
 }
 
 /* Main Layout
 -----------------------------------------------*/
 
 body {
-	margin: 0px; padding: 0px;
 	background:url(images/bg.gif);
 	color: #0d0d0d;
-	font:14px/20px Helvetica, Arial, sans-serif;	
+	font:14px/20px Helvetica, Arial, sans-serif;
+	margin:0;
+	padding:0;	
 }
 #wrap {
 	position:relative;
@@ -100,9 +167,10 @@ body {
 
 /* Header Area 
 -----------------------------------------------------------*/
-#header {
+#branding {
 	float:left;
-	width:900px; height:115px;
+	width:900px; 
+	height:115px;
 	background: #FFF url(images/header.gif) bottom repeat-x;
 	border-left:30px solid #FFF;
 	border-right:30px solid #FFF;
@@ -113,7 +181,8 @@ body {
 
 #logo a {
 	display:block;
-	width: 212px; height: 45px;
+	width: 212px; 
+	height: 45px;
 	float:left;
 	margin:30px 0 0 0px;
 	text-indent:-9999em;
@@ -206,6 +275,7 @@ body {
 	width:900px;
 	padding:30px;
 }
+
 #content {
 	float: right; 
 	width:600px;
@@ -213,41 +283,56 @@ body {
 
 /* Main body blog content formatting
 --------------------------------------------------------------*/
-.hentry {padding:0 0 20px 0;}
+.hentry {
+	padding:0 0 20px 0;
+}
+
 p.date {
 	font-style:italic;
 	padding:0;
 }
+
 .hentry ul, .hentry ol {	
-	margin: 0 20px 5px 20px; 
-	padding:0 20px 5px 20px; 
-	font-size:14px; 
-	line-height:20px;
+	margin: 0 20px 5px; 
+	padding:0 20px 5px; 
 }
+
 .entrymeta {
 	margin:10px 0;
 	color: #99619f;
 	border-top:solid 1px #99619f;
 }
+
 .entrymeta p {
 	padding:3px 0; 
 	font-size:12px;
 	color:#99619f;
 }
-.post-navigation {padding:10px 0;}
-.post-navigation a {padding:3px; color:#99619f; text-decoration:none;}
-.post-navigation a:hover {color:#48244c; text-decoration:none;}
-.navigation-previous {
+
+.post-navigation {
+	padding:10px 0;
+} 
+.post-navigation a {
+	padding:3px; 
+	color:#99619f; 
+	text-decoration:none;
+}
+
+.post-navigation a:hover {
+	color:#48244c; 
+}
+
+.nav-previous {
 	float:left;
 	width:50%;
 	text-align:left;
 }
-.navigation-next {
+
+.nav-next {
 	float:right;
 	width:50%;
 	text-align:right;
 }
-
 
 /* Sidebar Area 
 -------------------------------------------*/
@@ -255,7 +340,10 @@ p.date {
 	float:left;
 	width:280px;
 }
-.widget {padding:10px 0 20px 0; }
+
+.widget {
+	padding:10px 0 20px 0; 
+}
 
 #sidebar h4 {
 	margin:0; padding:4px 8px 2px 8px;
@@ -265,114 +353,150 @@ p.date {
 	font-family:helvetica, arial, sans-serif;
 	color:#FFF;
 }
-#sidebar ul { list-style: none;}
+#sidebar ul { 
+	list-style: none;
+}
+
 #sidebar ul li {
 	padding:5px 10px;
 	border-bottom:1px solid #CCC;
 }
+
 #sidebar a {
 	color: #0d0d0d;
 	text-decoration: none;
 }
 
-#sidebar a:hover {color: #99619f;}
-.widget_search label {display:none;}
+#sidebar a:hover {
+	color: #99619f;
+}
+
+.widget_search label {
+	display:none;
+}
 
 /* Footer area
 ------------------------------------------------------------*/
-#footer {
+footer {
 	clear: both;
 	text-align: right;
 	width:900px;
 	margin:0 auto 0 auto;
 }
-#footer p {	
+
+footer p {	
 	font-size:11px; 
 	color:#99619f;
 }
 
 /* Comments													
 -----------------------------------------------------*/
-h3#comments { margin:30px 0 10px 0; }				
+h3#comments { 
+	margin:30px 0 10px; 
+}
+		
 .avatar {
 	float: left;
 	display:block;
-	padding: 0 20px 10px 0px;
-}		
-#commentlist {padding: 20px 0px;}
-#commentlist .bypostauthor {}
+	padding: 0 20px 10px 0;
+}
+		
+.commentmetadata {
+	margin-top: 0;
+}
 
-.commentmetadata {margin-top: 0;}
 ol#commentlist, ol#commentlist li {	
 	list-style: none;
-	margin:0; padding:0;
+	margin:0; 
+	padding:0;
 }
+
 ol#commentlist li {
-	padding:10px; margin:15px 0;
+	padding:10px; 
+	margin:15px 0;
 	border:1px solid #eee;
-	background:#fefefe;
 }
+
 ol#commentlist ul.children {
 	margin:10px 10px 0 25px;
 	padding:0;
 }
+
 ol#commentlist ul.children li {
 	border:none;
 	border-top:1px solid #eee;
 }
-ol#commentlist li p {
-	padding:6px 0;
-	font-size:14px; 
-	line-height:20px;
-}
-#commentform {padding:20px 0;}
-#commentform p {margin-bottom:10px;}
 
+ol#commentlist li p {
+	font-size:14px;
+	line-height:20px;
+	padding:6px 0;
+}
+
+#commentform p {
+	margin-bottom:10px;
+}
+
+#commentlist, #commentform {
+	padding:20px 0;
+}
 
 /* Respond (comments form area)
 -----------------------------------------------------*/
-#respond {padding: 0 1px;}
-#reply-title { }
+#respond {
+	padding:0 1px;
+}
+
 #respond form {
-	overflow: hidden;
-	padding: 20px 19px 4px 19px;
-	border: 1px solid #eee;
+	overflow:hidden;
+	border:1px solid #eee;
+	padding:20px 19px 4px;
 }
+
 #respond label {
-	padding: 0 0 10px 0px;
-	font-size: 14px;
+	font-size:14px;
+	padding:0 0 10px;
 }
-#respond p{ margin: 0 0 15px;}
+
+#respond p {
+	margin:0 0 15px;
+}
+
 #respond .required {
-	color: #ba0000;	
+	color:#ba0000;
 }
-#respond input[type="text"], #respond input[type="email"], #respond input[type="url"] {
-	display: block;
-	width: 230px;
-	height: 33px;
-	padding: 0 10px;
-	color: #333;	
+
+#respond input[type="text"],#respond input[type="email"],#respond input[type="url"] {
+	display:block;
+	width:230px;
+	height:33px;
+	color:#333;
+	padding:0 10px;
 }
+
 #respond textarea {
-	width: 93%;
-	padding: 10px;
-	color: #333;
-	border: 1px solid #eee;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
+	width:93%;
+	color:#333;
+	border:1px solid #eee;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	padding:10px;
 }
+
 #submit,.reply a {
 	background:#48244c;
 	color:#fff;
-	font-size: 14px;
-	border: none;
-	padding:3px 10px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;	
+	font-size:14px;
+	border:none;
+	-moz-border-radius:4px;
+	border-radius:4px;
 	text-decoration:none;
+	padding:3px 10px;
 }
+
 #submit:hover {
-	cursor: pointer;	
+	cursor:pointer;
 }
+
 
 .form-allowed-tags {display:none;}/* Hides all the crap about html tags*/
