@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+<?php
+/**
+ * The Header for our theme.
+ *
+ * Displays all of the <head> section, header and top navigation areas
+ *
+ * @package blm_basic
+ *
+ */
+?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
