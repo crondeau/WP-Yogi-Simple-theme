@@ -8,7 +8,7 @@ http://www.wpyogi.com/2011/04/build-a-simple-custom-theme/
 This theme is the first one is a series.
 
 You can check out a demo of the theme here.
-http://simple.wpyogi.com/
+http://wpyogi.com/simple/
  
 
 
